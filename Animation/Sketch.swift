@@ -27,6 +27,10 @@ class Sketch : NSObject {
     // Runs in a loop, forever, to create the animated effect
     func draw() {
         
+        // Clean up from last loop
+        canvas.fillColor = Color.white
+        canvas.drawRectangle(centreX: 250, centreY: 250, width: 500, height: 500)
+        
         // Change position
         x += dx
         
@@ -35,8 +39,14 @@ class Sketch : NSObject {
             dx = -2 //move to the left}
         }
         // Draw an ellipse in the middle of the canvas
+        canvas.fillColor = Color.black
         canvas.drawEllipse(centreX: x, centreY: 250, width: 50, height: 50)
         
+        canvas.drawEllipse(centreX: x, centreY: 250, width: 50, height: 50)
+        canvas.drawEllipse(centreX: x, centreY: 50, width: 50, height: 50)
+        canvas.drawEllipse(centreX: x, centreY: 450, width: 50, height: 50)
+       
+
     }
     
 }

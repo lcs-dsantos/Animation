@@ -45,8 +45,9 @@ class Sketch : NSObject {
         canvas.drawEllipse(centreX: x, centreY: 250, width: 50, height: 50)
         canvas.drawEllipse(centreX: x, centreY: 50, width: 50, height: 50)
         canvas.drawEllipse(centreX: x, centreY: 450, width: 50, height: 50)
-       
-
+        canvas.drawEllipse(centreX: 500-x, centreY: 150, width: 50, height: 50)
+        canvas.drawEllipse(centreX: 500-x, centreY: 350, width: 50, height: 50)
+        
     }
     
 }
